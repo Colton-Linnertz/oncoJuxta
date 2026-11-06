@@ -1,6 +1,7 @@
-<h1>
-  <img src="docs/oncoJuxta-logo.svg" alt="oncoJuxta logo" width="48" align="middle"> oncoJuxta
-</h1>
+<table border="0"><tr>
+  <td><img src="docs/oncojuxta-logo.svg" alt="oncoJuxta logo" width="56"></td>
+  <td><h1>oncoJuxta</h1></td>
+</tr></table>
 
 ![Status](https://img.shields.io/badge/status-in%20progress-orange)
 ![Python](https://img.shields.io/badge/python-3.x-3776AB?logo=python&logoColor=white)
