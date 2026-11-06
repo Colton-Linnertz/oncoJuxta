@@ -7,7 +7,6 @@
 
 **Near-truth somatic variant scoring from paired tumor-normal sequencing for precision oncology: machine learning–based pairing QC, evidence reconciliation, and calibrated VCF annotation.**
 
-> *Juxta* (Latin): **beside**, **near**.
 > oncoJuxta puts the tumor and normal samples **beside** each other and scores each variant to get as **near** the truth as the evidence allows.
 
 > ⚠️ **Status: early development.** The features below describe planned design. Research use only; not validated for clinical decision-making.
