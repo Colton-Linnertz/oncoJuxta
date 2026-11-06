@@ -1,5 +1,5 @@
 <h1>
-  <img src="docs/oncoJuxta-logo.svg" alt="oncoJuxta logo" width="48" align="bottom"> oncoJuxta
+  <img src="docs/oncoJuxta-logo.svg" alt="oncoJuxta logo" width="48" align="center"> oncoJuxta
 </h1>
 
 ![Status](https://img.shields.io/badge/status-in%20progress-orange)
