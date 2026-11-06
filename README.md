@@ -3,6 +3,7 @@
 ![Status](https://img.shields.io/badge/status-in%20progress-orange)
 
 **Near-truth somatic variant scoring from paired tumor-normal sequencing.**
+
 **ML-based pairing QC, evidence reconciliation, and calibrated VCF annotation.**
 
 > oncoJuxta puts the tumor and normal samples **beside** each other and scores each variant to get as **near** the truth as the evidence allows.
