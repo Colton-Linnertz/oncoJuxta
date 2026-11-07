@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 12 96 76" width="256" height="203" role="img" aria-labelledby="title desc">
+  <title id="title">oncoJuxta logo</title>
+  <desc id="desc">Two side-by-side stacks of sequencing reads, teal for the normal sample and mint for the tumor, with a deep-teal variant column present only in the tumor reads.</desc>
+  <g fill="#14B8A6">
+    <rect x="6"  y="14" width="34" height="8" rx="4"/>
+    <rect x="12" y="30" width="34" height="8" rx="4"/>
+    <rect x="4"  y="46" width="34" height="8" rx="4"/>
+    <rect x="10" y="62" width="34" height="8" rx="4"/>
+    <rect x="6"  y="78" width="34" height="8" rx="4"/>
+  </g>
+  <g fill="#34D399">
+    <rect x="56" y="14" width="34" height="8" rx="4"/>
+    <rect x="62" y="30" width="34" height="8" rx="4"/>
+    <rect x="54" y="46" width="34" height="8" rx="4"/>
+    <rect x="60" y="62" width="34" height="8" rx="4"/>
+    <rect x="56" y="78" width="34" height="8" rx="4"/>
+  </g>
+  <g fill="#0F766E">
+    <rect x="72" y="30" width="7" height="8"/>
+    <rect x="72" y="46" width="7" height="8"/>
+    <rect x="72" y="62" width="7" height="8"/>
+  </g>
+</svg>
