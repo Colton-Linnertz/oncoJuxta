@@ -1,9 +1,8 @@
 <h1>
-  <img src="docs/oncoJuxta-logo.svg" alt="oncoJuxta logo" width="48" align="bottom"> oncoJuxta
+  <img src="docs/oncojuxta-logo.svg" alt="oncoJuxta logo" width="64" align="middle"> oncoJuxta
 </h1>
 
 ![Status](https://img.shields.io/badge/status-in%20progress-orange)
-![Python](https://img.shields.io/badge/python-3.x-3776AB?logo=python&logoColor=white)
 
 **Near-truth somatic variant scoring from paired tumor-normal sequencing for precision oncology: machine learning–based pairing QC, evidence reconciliation, and calibrated VCF annotation.**
 
