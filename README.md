@@ -1,4 +1,6 @@
-# oncoJuxta
+<h1>
+  <img src="docs/oncojuxta-logo-tight.svg" alt="oncoJuxta logo" width="64" align="middle"> oncoJuxta
+</h1>
 
 ![Status](https://img.shields.io/badge/status-in%20progress-orange)
 
