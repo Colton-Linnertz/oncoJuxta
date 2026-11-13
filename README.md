@@ -1,12 +1,12 @@
 <h1>
-  <img src="docs/oncojuxta-logo.svg" alt="oncoJuxta logo" width="64" align="middle"> oncoJuxta
+  <img src="docs/oncojuxta-logo.svg" alt="oncoJuxta logo" width="64" align="middle"> OncoJuxta
 </h1>
 
 ![Status](https://img.shields.io/badge/status-in%20progress-orange)
 
 **Near-truth somatic variant scoring from paired tumor-normal sequencing for precision oncology: machine learning–based pairing QC, evidence reconciliation, and calibrated VCF annotation.**
 
-> oncoJuxta puts the tumor and normal samples **beside** each other and scores each variant to get as **near** the truth as the evidence allows.
+> OncoJuxta puts the tumor and normal samples **beside** each other and scores each variant to get as **near** the truth as the evidence allows.
 
 > ⚠️ **Status: early development.** The features below describe planned design. Research use only; not validated for clinical decision-making.
 
@@ -16,7 +16,7 @@
 
 Somatic variant calling from tumor-normal pairs is noisy. Different callers disagree. Germline variants leak into somatic calls. Low-coverage sites in the normal look like "absent" when they are really "unknown." Blood-derived clonal hematopoiesis mutations look like tumor mutations. And sequencing or FFPE artifacts look like real low-frequency variants.
 
-oncoJuxta is a machine learning tool that looks at the evidence for each candidate variant in **both** samples of a pair. It reconciles that evidence into a single, calibrated assessment and writes the result back into the VCF as a per-variant score and classification.
+OncoJuxta is a machine learning tool that looks at the evidence for each candidate variant in **both** samples of a pair. It reconciles that evidence into a single, calibrated assessment and writes the result back into the VCF as a per-variant score and classification.
 
 ## Why it matters for precision oncology
 
@@ -35,9 +35,9 @@ Simple workarounds have well-known blind spots:
 
 These are exactly the situations where a model that weighs paired evidence together should outperform fixed rules. 
 
-oncoJuxta aims to give downstream interpretation tools a cleaner, better-characterized variant set.
+OncoJuxta aims to give downstream interpretation tools a cleaner, better-characterized variant set.
 
-*oncoJuxta does not interpret clinical significance or recommend treatment. It aims to improve the quality of the variant calls that interpretation relies on.*
+*OncoJuxta does not interpret clinical significance or recommend treatment. It aims to improve the quality of the variant calls that interpretation relies on.*
 
 ## Core components
 
@@ -59,7 +59,7 @@ Before any variant is scored, oncoJuxta checks that the pair is valid:
 
 ### 2. Tumor-normal reconciliation
 
-For every candidate site, oncoJuxta brings together the evidence from both samples into one view:
+For every candidate site, OncoJuxta brings together the evidence from both samples into one view:
 
 - Allele counts, VAF, depth, base/mapping quality and strand balance **in both tumor and normal**
 - **"Absent" vs "not callable":** whether the normal truly lacks the variant or simply lacks coverage there
@@ -89,7 +89,7 @@ Each variant is assigned a reconciled class:
 
 ### 4. Tumor-only fallback mode
 
-A matched normal is not always available. In that case oncoJuxta can run in a **tumor-only mode**:
+A matched normal is not always available. In that case OncoJuxta can run in a **tumor-only mode**:
 
 - Uses a model trained without normal-sample features. It relies on population databases, panel of normals, VAF and copy-number context, and CH gene priors.
 - Scores are **explicitly flagged** (`OJX_MODE=TUMOR_ONLY`) and calibrated separately, so they are never mistaken for paired results.
@@ -97,7 +97,7 @@ A matched normal is not always available. In that case oncoJuxta can run in a **
 
 ## Output
 
-oncoJuxta annotates the input VCF rather than replacing it:
+OncoJuxta annotates the input VCF rather than replacing it:
 
 ```
 ##INFO=<ID=OJX_SCORE,Number=A,Type=Float,Description="oncoJuxta calibrated probability the variant is a true somatic variant">
@@ -140,7 +140,7 @@ oncojuxta score      --vcf tumor_calls.vcf.gz --tumor-only --model oncojuxta-to-
 
 ## Disclaimer
 
-oncoJuxta is a research tool. Its scores are probabilistic estimates, not diagnoses, and it has not been validated for clinical use.
+OncoJuxta is a research tool. Its scores are probabilistic estimates, not diagnoses, and it has not been validated for clinical use.
 
 ## License
 
